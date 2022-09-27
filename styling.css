@@ -70,7 +70,7 @@ a{
     font-size: 12px;
     width: 100px;
     text-align: center;
-    
+    transition: background-color 0.6s;
 }
 
 a:hover{
@@ -100,6 +100,7 @@ a:hover{
     font-size: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
+    transition: background-color 0.75s;
     
 }
 
@@ -110,6 +111,27 @@ a:hover{
     
 }
 
+.displaycontainer{
+
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+}
+
+.post{
+
+    height: 400px;
+    width: 400px;
+    border: 5px solid gold;
+}
+
+.postpic{
+    height: inherit;
+    width: inherit;
+}
 
 
 @keyframes startanim {
