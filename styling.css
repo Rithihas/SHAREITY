@@ -1,0 +1,153 @@
+*{
+
+    padding : 0;
+    margin : 0;
+
+}
+
+body{
+
+    background-color: black;
+
+}
+
+.preentry{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.maincontainer{
+    display: none;
+    animation: startanim 0.75s;
+}
+
+.headerimage{
+    height: 80px;
+    width: 300px;
+}
+
+.head{
+
+    display : flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    border-bottom: 3px solid gold;
+
+}
+
+.mainheading{
+
+
+    color : gold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menubar{
+
+    display: none;
+    column-gap:80px;
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    animation: menubar 0.75s;
+    margin-right: 370px;
+}
+
+a{
+
+    text-decoration: none;
+    color: gold;
+    border: 2px solid gold;
+    padding: 5px;
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+    
+}
+
+a:hover{
+    color: black;
+    background-color: gold;
+}
+
+.menu{
+
+    width: 100%;
+    display : flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    
+    
+   
+}
+
+.menubutton{
+
+    height : 60px;
+    width: 60px;
+    
+    background: transparent;
+    border: 2px solid gold;
+    color: gold;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
+    
+}
+
+.menubutton:hover{
+
+    background-color: gold;
+    color: black;
+    
+}
+
+
+
+@keyframes startanim {
+
+    from{
+
+        opacity: 0;
+        transform:translateY(-300px) ;
+
+    }
+
+    to{
+        opacity: 1;
+        transform:translateY(0px) ;
+    }
+    
+}
+
+@keyframes  menubar {
+
+  0%{
+      opacity : 0;
+      transform: translateX(370px);
+
+   }
+
+   
+    50%{
+        opacity: 0.6;
+        transform:  translateX(-370px);
+        transform: rotateX(180deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform:  translateX(0px);
+        transform: rotateX(0deg);
+    }
+    
+}
+
